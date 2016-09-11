@@ -11,7 +11,7 @@ public class Person {
     public void should_give_name(){
         String yourName = "ALVARADO";
         String.format("Hi %s, my name is %s", name, yourName);
-        System.out.println( name  + yourName);
+        System.out.println( name  + " "+ yourName);
 
     }
 }
