@@ -1,5 +1,7 @@
 package myfirstproject;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.util.Random;
@@ -10,6 +12,8 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Created by gerardoalvarado on 24/05/2016.
  */
 public class MyFirstTest {
+
+    static Logger log = LogManager.getLogger(MyFirstTest.class);
 
     @Test
     public void should_return_the_same_string_when_uppercased() {
@@ -28,6 +32,7 @@ public class MyFirstTest {
         int valeurMin= 0;
         int valeurMax= 20000;
         int valeur = valeurMin + r.nextInt(valeurMax - valeurMin);
+        log.info(r);
 
     }
 
@@ -36,8 +41,9 @@ public class MyFirstTest {
        String yourName ="Stef";
         String name = "Gerardo";
         String.format("Hi", name," my name is",yourName);
-    }
+        log.info(name + yourName);
 
+    }
     }
 
 

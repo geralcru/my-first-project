@@ -1,5 +1,5 @@
 package myfirstproject;
-
+import com.sun.scenario.Settings;
 import org.junit.Test;
 
 import java.util.List;
@@ -9,6 +9,7 @@ import java.util.List;
  */
 public class MyFirstCommand {
 
+private Settings settings;
   @Test
     public void shout_copy_variable(){
  List<String> var = null;
