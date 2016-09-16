@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class MyFirstTest {
 
-    static Logger log = LogManager.getLogger(MyFirstTest.class);
+    private static Logger log = LogManager.getLogger(MyFirstTest.class);
 
     @Test
     public void should_return_the_same_string_when_uppercased() {
