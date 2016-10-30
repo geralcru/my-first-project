@@ -37,7 +37,7 @@ public class MyFirstTest {
 
     @Test
     public void greet() {
-       String yourName ="Stef";
+       String yourName ="Stephanie";
         String name = "Gerardo";
         log.info(" Hi "+ name + ", My name is " + yourName);
         log.info(name + yourName);
