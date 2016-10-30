@@ -1,6 +1,5 @@
 package myfirstproject;
 
-import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
@@ -13,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class MyFirstTest {
 
-    private static Logger log = LogManager.getLogger(MyFirstTest.class);
+    private static Logger log = Logger.getLogger(MyFirstTest.class);
 
     @Test
     public void should_return_the_same_string_when_uppercased() {
@@ -40,7 +39,7 @@ public class MyFirstTest {
     public void greet() {
        String yourName ="Stef";
         String name = "Gerardo";
-        String.format("Hi", name," my name is",yourName);
+        log.info(" Hi "+ name + ", My name is " + yourName);
         log.info(name + yourName);
 
     }
